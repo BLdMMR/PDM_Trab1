@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SpiritIsland">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/MainScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/gameTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="\t Spirit Island"
+                    android:textSize="30dp"
+                    android:fontFamily="casual"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="25dp"
+                    android:background="@android:color/holo_red_dark" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_gravity="center">
+
+                        <Button
+                            android:id="@+id/prevImg"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:text="@string/prev"
+                            android:textSize="50sp"
+                            android:textColor="@android:color/darker_gray" />
+
+                        <ImageView
+                            android:id="@+id/img"
+                            android:layout_width="300dp"
+                            android:layout_height="300dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="15dp"
+                            android:src="@drawable/img1" />
+
+                        <Button
+                            android:id="@+id/nxtImage"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:text="@string/nxt"
+                            android:textSize="50sp"
+                            android:textColor="@android:color/darker_gray" />
+
+                    </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="25dp"
+                    android:background="#FFF0b119"
+                    android:text="Details:\n
+ - Players: 1 - 4\n
+ - Playtime: 90 - 120 minutes\n
+ - Minimum Age:13\n
+ - MSRP: $79.95\n
+ - Designer: R. Eric Reuss\n
+ - Artists: Jason Behnke, Kat G Bermelin, Loïc Billiau, Cari Corene, Lucas Durham, Rocky Hammer, Sydni Kruger, Nolan Nasser, Jorge Ramos, Adam Rebottaro, Moro Rogers, Graham Sternberg, Shane Tyree, Joshua Wright (I)\n
+ Publishers: Greater Than Games\n
+ - Year Published: 2016\m
+ - Weight:2 lbs\m
+ - Size:11.6 x 3 x 11.6 inches\n"
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/RulesButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rules"
+                    android:background="@android:color/holo_red_dark"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"/>
+
+<!--                <Button-->
+<!--                    android:id="@+id/btnAct"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Activity"-->
+<!--                    android:background="@android:color/holo_red_dark"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:onClick="sendMessage"-->
+<!--                    />-->
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
